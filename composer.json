@@ -1,0 +1,19 @@
+{
+    "name": "teunv/geometric-counter",
+    "description": "A package for running various calculations for geometric shapes",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Teunv\\GeometricCounter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Teun Verweerden",
+            "email": "Teun-Verweerden@live.nl"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
