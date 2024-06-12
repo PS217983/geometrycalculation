@@ -12,11 +12,9 @@ class SurfaceCalculator
      * 
      * @param float $width
      * @param float $length
-     * @param string $fromUnit
-     * @param string $toUnit
      * @return float
      */
-    public function CalculateRectangleSurface(float $width, float $length, string $fromUnit = "meter", string $toUnit = "meter") : float {
+    public function CalculateRectangleSurface(float $width, float $length) : float {
         return $width * $length;
     }
 
@@ -26,11 +24,9 @@ class SurfaceCalculator
      * 
      * @param float $width
      * @param float $length
-     * @param string $fromUnit
-     * @param string $toUnit
      * @return float
      */
-    public function calculateTriangleSurface(float $width, float $length, string $fromUnit = "meter", string $toUnit = "meter") : float {
+    public function calculateTriangleSurface(float $width, float $length) : float {
         return $width * $length / 2;
     }
 
@@ -39,11 +35,9 @@ class SurfaceCalculator
      * Calculation returns in the same metric as the param's metric send.
      * 
      * @param float $radius
-     * @param string $fromUnit
-     * @param string $toUnit
      * @return float
      */
-    public function calculateCirlceSurface(float $radius, string $fromUnit = "meter", string $toUnit = "meter") : float {
+    public function calculateCirlceSurface(float $radius) : float {
         return pi() * pow($radius, 2);
     }
 
@@ -52,11 +46,9 @@ class SurfaceCalculator
      * Calculation returns in the same metric as the param's metric send.
      * 
      * @param float $sideLength
-     * @param string $fromUnit
-     * @param string $toUnit
      * @return float
      */
-    public function calculateHexagonSurface(float $sideLength, string $fromUnit = "meter", string $toUnit = "meter") : float {
+    public function calculateHexagonSurface(float $sideLength) : float {
         return 3 * sqrt(3) / 2 * pow($sideLength, 2);
     }
 }
