@@ -1,5 +1,5 @@
 <?php
-namespace teunv\SurfaceCalculator;
+namespace teunv\GeometricCalculator\SurfaceCalculator;
 
 require_once('Systems.php');
 class SurfaceCalculator

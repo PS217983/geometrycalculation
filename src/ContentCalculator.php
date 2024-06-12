@@ -1,5 +1,5 @@
 <?php
-namespace teunv\SurfaceCalculator;
+namespace teunv\GeometricCalculator\ContentCalculator;
 
 use Systems;
 class ContentCalculator

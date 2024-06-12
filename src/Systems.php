@@ -1,5 +1,5 @@
 <?php
-namespace teunv\Systems;
+namespace teunv\GeometricCalculator\Systems;
 
 class Systems
 {
