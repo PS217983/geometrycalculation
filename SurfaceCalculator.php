@@ -1,4 +1,6 @@
 <?php
+namespace teunv\SurfaceCalculator;
+
 require_once('Systems.php');
 class SurfaceCalculator
 {

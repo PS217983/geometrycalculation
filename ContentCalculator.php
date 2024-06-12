@@ -1,4 +1,6 @@
 <?php
+namespace teunv\SurfaceCalculator;
+
 use Systems;
 class ContentCalculator
 {

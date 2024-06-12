@@ -1,4 +1,6 @@
 <?php
+namespace teunv\Systems;
+
 class Systems
 {
     private static $metrics = [
