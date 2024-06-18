@@ -1,5 +1,5 @@
 {
-    "name": "teunv/geometric-counter",
+    "name": "teunv/geometriccalculator",
     "description": "A package for running various calculations for geometric shapes",
     "type": "library",
     "license": "MIT",
