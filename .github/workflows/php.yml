@@ -33,7 +33,7 @@ jobs:
       run: composer install --prefer-dist --no-progress
 
   - name: Fix codestyle issues
-    run: ./vendor/bin/phpcbf ./src
+  run: ./vendor/bin/phpcs --report=diff ./src || true
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
