@@ -32,8 +32,8 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
-    - name: Cleanup codestyle
-      run: ./vendor/bin/phpcs ./src
+  - name: Fix codestyle issues
+    run: ./vendor/bin/phpcbf ./src
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
