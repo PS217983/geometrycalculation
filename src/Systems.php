@@ -3,18 +3,19 @@ namespace teunv\GeometricCalculator;
 
 class Systems
 {
-    private static $metrics = [
+    private const METRICS = [
         "km" => 1000,
         "hm" => 100,
         "dam" => 10,
+        "m" => 1,
         "dm" => 0.1,
         "cm" => 0.01,
         "mm" => 0.001,
 
-        "in" => 39.3700787402,
-        "ft" => 3.280839895,
-        "yd" => 1.0936132983,
-        "mi" => 0.0006213712
+        "in" => 0.0254,
+        "ft" => 0.3048,
+        "yd" => 0.9144,
+        "mi" => 1609.344
     ];
 
     /**
@@ -24,6 +25,7 @@ class Systems
      * - km
      * - hm
      * - dam
+     * - m
      * - dm
      * - cm
      * - mm
@@ -36,7 +38,8 @@ class Systems
      * @param string $unitOutput
      * @param float $amount
      */
+
     public function CalculateUnits(string $unitInput, string $unitOutput, float $amount) : float {
-        return $amount / $this->metrics[$unitInput] * $this->metrics[$unitOutput];
+        return $amount / self::METRICS[$unitOutput] * self::METRICS[$unitInput];
     }
 }
