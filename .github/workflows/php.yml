@@ -34,7 +34,7 @@ jobs:
 
     - name: Check codestyle issues
       run: ./vendor/bin/phpcs --report=diff ./src
-      continue-on-error: true  # This ensures the job continues even if there are phpcs errors
+      # continue-on-error: true  # This ensures the job continues even if there are phpcs errors
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
